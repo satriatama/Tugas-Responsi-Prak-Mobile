@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Halaman Update</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="full">
+    <ion-label position="floating">nama</ion-label>
+    <ion-input type="text" [(ngModel)]="nama" required="required"> </ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">NIM</ion-label>
+    <ion-input type="text" [(ngModel)]="NIM" required="required"></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Alamat</ion-label>
+    <ion-input type="text" [(ngModel)]="alamat" required="required">
+    </ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button
+        type="submit"
+        color="dark"
+        expand="block"
+        (click)="prosesUpdate()"
+        >Update</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-content>
